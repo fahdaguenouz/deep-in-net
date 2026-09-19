@@ -36,6 +36,11 @@ connectivity checks.
 
 ## Exercise 1 — Direct PC-to-PC links
 
+### Reference diagrams
+
+![Exercise 1 topology](https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/deep-in-net/pictures/ex01.jpg)
+
+
 Three independent pairs of PCs communicate without an intermediate device. A
 direct connection traditionally uses a crossover Ethernet cable because both
 ends are the same device type.
@@ -61,6 +66,11 @@ No default gateway is required because communication never leaves a local link.
 Test `PC0 ↔ PC1`, `PC2 ↔ PC3`, and `PC4 ↔ PC5` with `ping`.
 
 ## Exercise 2 — Switch and hub
+
+### Reference diagrams
+
+![Exercise 2 topology](https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/deep-in-net/pictures/ex02.jpg)
+
 
 | Segment | Device | IPv4 address | Mask | Gateway |
 |---|---|---:|---:|---:|
@@ -89,8 +99,10 @@ unless VLANs are used.
 
 ## Exercise 3 — Network services
 
-All devices connect to Switch0 on `192.168.1.0/24`. There is no router, so a
-default gateway is unnecessary for the required local services.
+### Reference diagrams
+
+![Exercise 3 topology](https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/deep-in-net/pictures/ex03.jpg)
+
 
 ### Static server addressing
 
@@ -141,6 +153,10 @@ sequencing, acknowledgements, retransmission, and flow control; UDP does not.
 
 ## Exercise 4 — One router and two subnets
 
+### Reference diagrams
+
+![Exercise 4 topology](https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/deep-in-net/pictures/ex04.jpg)
+
 Router0 connects two `/30` LANs and automatically installs both as directly
 connected routes.
 
@@ -157,6 +173,11 @@ routing table, and separates broadcast domains. A default gateway is the local
 router address to which a host sends remote traffic.
 
 ## Exercise 5 — Two switched subnets through one router
+
+### Reference diagrams
+
+![Exercise 5 topology](https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/deep-in-net/pictures/ex05.jpg)
+
 
 | LAN | Network | Usable range | Broadcast | Router1 interface |
 |---|---|---|---|---|
@@ -183,6 +204,11 @@ The saved Subnet 2 gateway is outside that `/27`; change it to
 
 ## Exercise 6 — Static routing between two routers
 
+### Reference diagrams
+
+![Exercise 6 topology](https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/deep-in-net/pictures/ex06.jpg)
+
+
 | Router | Interface | Address | Mask | Connected network |
 |---|---|---:|---:|---:|
 | Router0 | FastEthernet0/0 | `192.168.1.1` | `255.255.255.252` | `192.168.1.0/30` |
@@ -205,6 +231,11 @@ paths. A router uses the most specific matching prefix. Both a forward route and
 a return route are required.
 
 ## Exercise 7 — Two complete LANs
+
+### Reference diagrams
+
+![Exercise 7 topology](https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/deep-in-net/pictures/ex07.jpg)
+
 
 | Router | Interface | Address | Mask |
 |---|---|---:|---:|
@@ -234,6 +265,11 @@ Test within each switch, then in both directions across the serial link. The
 audit may ask the learner to recreate this network without external tools.
 
 ## Exercise 8 — Three LANs with static routing
+
+### Reference diagrams
+
+![Exercise 8 official topology](https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/deep-in-net/pictures/ex08.jpg)
+
 
 ### Objective
 
